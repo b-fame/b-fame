@@ -10,35 +10,26 @@
 
 **Software Engineer &nbsp;•&nbsp; AI Enthusiast &nbsp;•&nbsp; Cybersecurity Learner &nbsp;•&nbsp; Gamer**
 
-`@b-fame` &nbsp;—&nbsp; Kigali, Rwanda
-
-<br>
-
-I build full-stack web applications end to end — from relational schema design and
-REST APIs to session-based authentication and role-based access control. My work
-lives at the intersection of shipping reliable software and understanding how it
-fails, so **security and AI sit beside the product, not after it.**
+`@b-fame` &nbsp;·&nbsp; Kigali, Rwanda &nbsp;·&nbsp; Open to software engineering work
 
 </div>
 
 <br>
 
 ```text
-const bFame = {
-  name:   "Blaise Serge Rutayisire",
-  handle: "@b-fame",
-  role:   "Software Engineer",
-  based:  "Kigali, Rwanda",
-  focus:  ["Full-Stack Engineering", "AI", "Cybersecurity"],
-  stack:  ["React", "Node.js", "Express", "MySQL"]
-};
+$ whoami
+Blaise Serge Rutayisire — @b-fame
+─────────────────────────────────────────────
+role      Software Engineer
+base      Kigali, Rwanda
+building  Full-stack applications
+          React · Node.js · Express · MySQL
+pursuing  Artificial Intelligence · Cybersecurity
 ```
 
 <br>
 
 <div align="center">
-
-### Navigation
 
 [About](#about) &nbsp;·&nbsp; [Stack](#stack) &nbsp;·&nbsp; [Projects](#projects) &nbsp;·&nbsp;
 [Spotlight](#spotlight) &nbsp;·&nbsp; [Focus](#focus) &nbsp;·&nbsp; [Activity](#activity) &nbsp;·&nbsp;
@@ -52,23 +43,20 @@ const bFame = {
 
 ## About
 
-I'm a software engineer working primarily in the **JavaScript** ecosystem, building
-full-stack applications with **React** on the front end and **Node.js / Express**
-with **MySQL** on the back end.
+I build full-stack web applications in the **JavaScript** ecosystem — **React** on
+the front end, **Node.js / Express** and **MySQL** on the back end. My focus is
+the layer most demos skip: the relational schema, the REST contract, and the
+authentication and authorization that decide who is allowed to call what.
 
-My main project — a wash-bay payment management system — is a complete operational
-tool rather than a demo: it models a real business flow (vehicle entry, timed
-pricing, cash-out, reporting) and enforces **three-tier role-based access control**
-(`admin`, `manager`, `cashier`) with hashed credentials and a full audit trail.
-That project taught me that the difference between software that runs and software
-you can trust lives in the unglamorous parts: input validation, authorization
-checks on every route, and logging what actually happened.
+My primary project is a **car wash bay payment management system** — an
+operational tool rather than a portfolio piece. It models a real business flow
+(vehicle entry, time-based pricing, payment, reporting) and enforces
+**three-tier role-based access control** (`admin` · `manager` · `cashier`) with
+bcrypt-hashed credentials and a full audit trail over every mutating action.
 
-Outside of building, I'm drawn to **artificial intelligence** and
-**cybersecurity** — understanding how systems are attacked is what makes me a
-better engineer about how they're built. I'm a gamer, too. Competitive
-multiplayer has trained the same instinct that good engineering demands:
-iterate fast, read the feedback, adapt.
+I'm drawn to **artificial intelligence** and **cybersecurity**. Both shape how I
+approach building: understanding how a system can be attacked is what makes for
+defensive engineering.
 
 <br>
 
@@ -76,7 +64,7 @@ iterate fast, read the feedback, adapt.
 
 ## Tech Stack
 
-Everything listed here is either used in my own code or is part of my daily workflow.
+Reflects the dependencies in my own code, plus the tools in my daily workflow.
 
 | Layer | Technologies |
 | :--- | :--- |
@@ -95,8 +83,8 @@ All public repositories on this account.
 
 | Project | What It Is | Stack | Links |
 | :--- | :--- | :--- | :--- |
-| **Car Wash Bay Payment Management System** | Full-stack system for running a car wash: vehicle entry/exit, time-based pricing, payments, role-based access, audit logs and reports. | React · Tailwind CSS · Express · MySQL | [Source](https://github.com/b-fame/car-wash-bay-payements) |
-| **School Management System** *(fork)* | A fork of the open-source `Volunteer-Tech` project that I keep as a **reference implementation** — I have not contributed code to it. | React · Node.js · Express | [My fork](https://github.com/b-fame/school-management-system-in-react-node-js-and-express-js) · [Upstream](https://github.com/Volunteer-Tech/school-management-system-in-react-node-js-and-express-js) |
+| **Car Wash Bay Payment Management System** | Operational system for running a car wash: vehicle entry/exit, time-based pricing, payments, role-based access, audit logs, reporting. | React · Tailwind CSS · Express · MySQL | [Source](https://github.com/b-fame/car-wash-bay-payements) |
+| **School Management System** *(fork)* | Fork of the open-source `Volunteer-Tech` project, kept as a **reference implementation**. I have not contributed code to it. | React · Node.js · Express | [My fork](https://github.com/b-fame/school-management-system-in-react-node-js-and-express-js) · [Upstream](https://github.com/Volunteer-Tech/school-management-system-in-react-node-js-and-express-js) |
 | **b-fame** | This profile repository. | — | [Source](https://github.com/b-fame/b-fame) |
 
 <br>
@@ -107,33 +95,37 @@ All public repositories on this account.
 
 <div align="center">
 
-### Car Wash Bay Payment Management System
+<a href="https://github.com/b-fame/car-wash-bay-payements"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=b-fame&repo=car-wash-bay-payements&theme=tokyonight&hide_border=true" alt="Car Wash Bay Payment Management System" /></a>
 
-**Repository →** [github.com/b-fame/car-wash-bay-payements](https://github.com/b-fame/car-wash-bay-payements)
+<br><br>
+
+**Car Wash Bay Payment Management System**
+
+[Source &nbsp;→](https://github.com/b-fame/car-wash-bay-payements)
 
 </div>
 
-**The problem.** A wash bay runs on a simple loop — a car arrives, a service is
-selected, time passes, money changes hands — but doing that with paper and
-memory means no accuracy, no accountability, and no idea what the business
-actually earned. This system turns that loop into a tracked, auditable workflow.
+**The problem.** A wash bay runs a simple loop — a car arrives, a service is
+selected, time passes, money changes hands. Done with paper and memory, that
+means no accuracy, no accountability, and no accurate picture of what the
+business earned. This system turns the loop into a tracked, auditable workflow.
 
 **What it does**
 
-- **Vehicle entry / exit** — register a vehicle, prevent duplicate plates in the
-  bay, and record exit time automatically on payment
+- **Vehicle entry / exit** — register a vehicle, reject a duplicate plate while one
+  is already in the bay, and stamp exit time automatically on payment
 - **Dynamic pricing engine** — base fee is derived from vehicle size × package
-  (Basic / Special / VIP), with a **20% surcharge per additional hour** parked
+  (Basic / Special / VIP), plus a **20% surcharge for each additional hour** parked
 - **Package management** — full CRUD on service packages, restricted to admins
-- **Authentication** — registration and login with **bcrypt**-hashed passwords
+- **Authentication** — registration and login against **bcrypt**-hashed passwords
   and server-side **sessions** (8-hour expiry, `httpOnly` cookies)
-- **Role-based access control** — three tiers enforced per route:
+- **Role-based access control** — three tiers enforced on the route itself:
   `cashier` (operations) · `manager` (reports) · `admin` (users, packages, audit)
 - **Audit trail** — every meaningful action (login, payment, vehicle edit,
-  deletion) is written to `activity_logs` with actor, details, IP and timestamp
-- **Reporting** — daily revenue by size and package, monthly revenue trends, and
-  fleet statistics, built with grouped SQL rather than application-side loops
-- **Operations dashboard** — vehicles, revenue, and payments currently in the bay
+  deletion) written to `activity_logs` with actor, detail, IP and timestamp
+- **Reporting** — daily revenue by size and package, monthly revenue trend, and
+  fleet statistics, computed with grouped SQL rather than application-side loops
+- **Operations dashboard** — vehicles, revenue, and what is currently in the bay
 
 **Architecture**
 
@@ -195,11 +187,11 @@ with foreign keys `payments → vehicles · packages · users` and
 
 <br>
 
-**Engineering notes.** The pricing logic lives on the server, not the client —
-a browser that never computes the fee is a browser that can't be edited to pay
-one. Authorization is enforced with `checkRole()` middleware on the route itself
-rather than hidden buttons in the UI. Activity logging is centralised in a single
-helper, so auditing isn't something a future endpoint can quietly forget to do.
+**Engineering decisions.** Pricing is computed server-side, so a browser that
+never calculates the fee is a browser that can't be edited to pay a different
+one. Authorization is enforced by `checkRole()` middleware on the route rather
+than by hiding buttons in the UI. Activity logging is centralised in a single
+helper, so auditing is not something a future endpoint can quietly forget.
 
 <br>
 
@@ -214,14 +206,13 @@ helper, so auditing isn't something a future endpoint can quietly forget to do.
 
 </div>
 
-- **Artificial Intelligence** — moving from interest to practice; understanding
-  where models genuinely help a product versus where they're just overhead
-- **Cybersecurity** — authentication, authorization, and secure defaults as a
-  design concern rather than a last-minute patch
-- **System design** — how a monolithic Express API should be decomposed when it
-  outgrows a single service
-- **Applied security in practice** — taking the auth and access-control patterns
-  from my main project and hardening them
+- **Artificial intelligence** — moving from consumer interest to building with it
+- **Cybersecurity** — authentication, authorization and secure defaults treated as
+  design constraints rather than a final hardening pass
+- **System design** — how a single-service Express API should be decomposed once
+  it outgrows its origin
+- **Applied security** — hardening the auth and access-control patterns already
+  in my main project
 
 <br>
 
@@ -249,9 +240,7 @@ helper, so auditing isn't something a future endpoint can quietly forget to do.
 
 <br>
 
-> Statistics are pulled live from the GitHub API and refresh automatically.
-> Contribution data reflects **public repositories only** — private work never
-> appears here.
+<p align="center"><sub>Pulled live from the GitHub API &middot; public repositories only</sub></p>
 
 <br>
 
@@ -265,15 +254,15 @@ helper, so auditing isn't something a future endpoint can quietly forget to do.
 
 </div>
 
-Understand how a system fails before you claim it works. Security isn't a phase
-at the end — it's an access-control check on every route. And a feature that
-isn't measured, logged, and testable is just a guess with a UI.
+Understand how a system fails before claiming it works. Security is an
+access-control check on every route, not a phase at the end. And a feature that
+isn't measured, logged and testable is a guess with a UI.
 
 <br>
 
 <a name="connect"></a>
 
-## Connect With Me
+## Connect
 
 <div align="center">
 
@@ -285,19 +274,19 @@ isn't measured, logged, and testable is just a guess with a UI.
 
 <br><br>
 
-**Open to software engineering opportunities, collaborations, and interesting problems.**
+**Open to software engineering roles, collaborations, and interesting problems.**
+
+</div>
 
 <!--
-  OPTIONAL CONTACTS — uncomment any line below and drop in your real URL.
-  Nothing here is rendered until you uncomment it, so there are no dead links.
+  OPTIONAL CONTACTS — uncomment and drop in your real URL. Nothing here renders
+  until uncommented, so there are no dead links.
 
   <br><br>
   <a href="https://linkedin.com/in/YOUR-HANDLE"><img src="https://img.shields.io/badge/LinkedIn-YOUR_HANDLE-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://x.com/YOUR-HANDLE"><img src="https://img.shields.io/badge/X-YOUR_HANDLE-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
   <a href="https://YOUR-DOMAIN.com"><img src="https://img.shields.io/badge/Portfolio-YOUR-DOMAIN.com-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
 -->
-
-</div>
 
 ---
 
